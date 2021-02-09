@@ -1,5 +1,5 @@
 #include "holberton.h"
-/*
+/**
  *print_alphabet - outputs the lower case letters
  *
  *Return: void
