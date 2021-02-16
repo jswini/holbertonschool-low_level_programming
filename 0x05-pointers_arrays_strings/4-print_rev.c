@@ -17,6 +17,12 @@ void print_rev(char *s)
 		_putchar('\n');
 }
 
+/**
+ *_strlen - outputs the length of the string s
+ *@s: string passed to be measured
+ *
+ *Return: length of string
+ */
 int _strlen(char *s)
 {
 	int count;
