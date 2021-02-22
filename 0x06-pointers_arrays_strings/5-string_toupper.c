@@ -10,9 +10,9 @@ char *string_toupper(char *array)
 {
 	int i;
 
-	for (i = 0; array [i] != '\0'; i++)
+	for (i = 0; array[i] != '\0'; i++)
 	{
-		if (array[i] > 96 && array [i] < 123)
+		if (array[i] > 96 && array[i] < 123)
 		{
 			array[i] = array[i] - 32;
 		}
