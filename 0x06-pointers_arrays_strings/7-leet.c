@@ -12,8 +12,6 @@ char *leet(char *array)
 	char nums[] = "4307143071";
 	int n, x;
 
-	if (*array == '\0')
-		return (array);
 	for (n = 0; array[n] != '\0'; n++)
 	{
 		for (x = 0; alpha[x] != '\0'; x++)
