@@ -1,6 +1,9 @@
 #include "holberton.h"
 /**
- *betty comments to add
+ *_puts_recursion - prints a string 1 char at time then newline
+ *@s: string to print
+ *
+ *Return: void
  */
 
 void _puts_recursion(char *s)
