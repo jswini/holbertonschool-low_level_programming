@@ -4,6 +4,8 @@
  *@dest: new location
  *@src: original location
  *@n: number of bytes to copy
+ *
+ *Return: the destination locatoin
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
