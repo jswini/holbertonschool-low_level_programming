@@ -27,15 +27,14 @@ char *_strdup(char *str)
 	int i, len;
 	char *array;
 
-	len = _strlen(str);
-	if (len == 0)
+	if (*str == '\0')
 	{
 		return (NULL);
-
 	}
 	else
 	{
-		array = malloc(sizeof(char) * (len - 1));
+		len = _strlen(str);
+		array = malloc(sizeof(char) * len);
 		if (array == NULL)
 		{
 			return (NULL);
