@@ -31,15 +31,22 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	concat = malloc(sizeof(char) * (s1len + s2len + 1));
-	for (i = 0; i < s1len; i++)
+	if (concat == NULL)
 	{
-		concat[i] = s1[i];
+		return (NULL);
 	}
-	for (j = 0; j < s2len; j++)
+	else
 	{
-		concat[i + j] = s2[j];
+		for (i = 0; i < s1len; i++)
+		{
+			concat[i] = s1[i];
+		}
+		for (j = 0; j < s2len; j++)
+		{
+			concat[i + j] = s2[j];
+		}
+		concat[i + j] = '\0';
 	}
-	concat[i + j] = '\0';
 	return (concat);
 }
 
