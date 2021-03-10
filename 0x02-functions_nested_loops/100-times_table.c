@@ -16,7 +16,7 @@ void print_times_table(int n)
 			for (b = 0; b <= n; b++)
 			{
 				result = a * b;
-				if ((result /100) == 0)
+				if ((result / 100) == 0)
 				{
 					if (result < 10)
 						_putchar(' ');
