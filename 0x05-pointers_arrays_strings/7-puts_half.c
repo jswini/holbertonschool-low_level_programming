@@ -32,6 +32,6 @@ void puts_half(char *str)
 	else
 		limit = length / 2;
 	for (count = limit; *(str + count); count++)
-		_putchar(*str + count);
+		_putchar(*(str + count));
 	_putchar('\n');
 }
