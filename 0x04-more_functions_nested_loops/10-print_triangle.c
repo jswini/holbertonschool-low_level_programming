@@ -12,14 +12,19 @@ void print_triangle(int size)
 	int hash;
 	int count;
 
-	for (hash = 1;  hash <= size; hash++)
+	if (size > 0)
 	{
+		for (hash = 1;  hash <= size; hash++)
 		{
-			for (space = (size - hash); space > 0; space--)
-				_putchar(' ');
+			{
+				for (space = (size - hash); space > 0; space--)
+					_putchar(' ');
+			}
+			for (count = 1; count <= hash; count++)
+				_putchar('#');
+			_putchar('\n');
 		}
-		for (count = 1; count <= hash; count++)
-			_putchar('#');
-		_putchar('\n');
 	}
+	else
+		_putchar('\n');
 }
