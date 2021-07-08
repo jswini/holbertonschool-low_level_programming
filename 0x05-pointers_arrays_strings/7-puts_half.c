@@ -25,7 +25,7 @@ void puts_half(char *str)
 {
 	int length = _strlen(str);
 	int limit;
- 	int count;
+	int count;
 
 	{
 		limit = (length + 1) / 2;
