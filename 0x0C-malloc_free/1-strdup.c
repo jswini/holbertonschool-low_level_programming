@@ -28,10 +28,13 @@ char *_strdup(char *str)
 	char *dest;
 	int len = _strlen(str);
 
-	dest = malloc(sizeof(char) * len);
-	if (dest == NULL)
-		return (NULL);
-	for (i = 0; i <= len; i++)
-		dest[i] = str[i];
+	if (str)
+	{
+		dest = malloc(sizeof(char) * len);
+		if (dest == NULL)
+			return (NULL);
+		for (i = 0; i <= len; i++)
+			dest[i] = str[i];
+	}
 	return (dest);
 }
