@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 
 	for (count = 0; h != NULL; count++)
 	{
-		if ((h->str == NULL) || (*h->str == '\0'))
+		if (h->str == NULL)
 		{
 			for (i = 0; error[i] != '\0'; i++)
 				_putchar(error[i]);
