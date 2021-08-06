@@ -12,6 +12,8 @@ size_t print_list(const list_t *h)
 	int count, i;
 	char *error = "[0] (nil)";
 
+	if (h == NULL)
+		printf("%s", error);
 	for (count = 0; h != NULL; count++)
 	{
 		if (h->str == NULL)
