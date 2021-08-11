@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * free_listint - frees a linked list of ints
+ * free_listint2 - frees a linked list of ints, leaving head as null
  * @head: start of the list
  *
  * Return: void
