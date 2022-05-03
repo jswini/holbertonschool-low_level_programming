@@ -5,3 +5,4 @@ all: school
 
 school:
 	${CC} $(SRC) -o $@
+.PHONY: school all
