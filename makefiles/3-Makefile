@@ -5,7 +5,7 @@ NAME = school #the name of the excecutable
 RM = rm #the program to delete files
 
 #builds the executable
-all: $(NAME)
+all: $(SRC)
 
 #%.o: %.c
 #	${CC} -c -o $@ $<
