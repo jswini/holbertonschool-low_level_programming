@@ -2,7 +2,7 @@ CC = gcc  #compiler to be used
 SRC = school.c main.c #the .c files
 OBJ = $(SRC:.c=.o) #the .o files
 NAME = school #the name of the excecutable
-RM = rm -f#the program to delete files
+RM = rm #the program to delete files
 
 #builds the executable
 all: $(NAME)
@@ -14,7 +14,7 @@ $(NAME): $(OBJ)
 
 #deletes all Emacs and Vim temporary files along with the executable
 clean:
-	$(RM) *~ $(NAME)	
+	$(RM) -f *~ $(NAME)	
 
 #deletes the object files
 oclean:
