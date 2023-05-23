@@ -6,10 +6,6 @@ RM = rm #the program to delete files
 
 #builds the executable
 all: $(SRC)
-
-#%.o: %.c
-#	${CC} -c -o $@ $<
-#$(NAME): $(OBJ)
 	${CC} $(OBJ) -o $@
 
 #deletes all Emacs and Vim temporary files along with the executable
