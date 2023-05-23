@@ -9,7 +9,7 @@ all: $(SRC)
 
 #%.o: %.c
 #	${CC} -c -o $@ $<
-$(NAME): $(OBJ)
+#$(NAME): $(OBJ)
 	${CC} $(OBJ) -o $@
 
 #deletes all Emacs and Vim temporary files along with the executable
